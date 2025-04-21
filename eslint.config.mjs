@@ -31,13 +31,6 @@ const eslintConfig = [
             "error",
             {
               case: "kebabCase",
-              // ignore: [
-              // 	"package.json",
-              // 	"package-lock.json",
-              // 	"README.md",
-              // 	"LICENSE",
-              // 	"CHANGELOG.md",
-              // ],
             },
           ],
         },
