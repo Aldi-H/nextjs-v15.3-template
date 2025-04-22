@@ -12,31 +12,26 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.config({
-    plugins: [eslintPluginUnicorn],
+    // plugins: [eslintPluginUnicorn],
+    plugins: ["unicorn"],
     extends: ["next/core-web-vitals", "next/typescript"],
-    rules: [
-      {
-        "no-console": "error",
-        "no-unused-var": "error",
-        "no-var": "error",
-        "@typescript-eslint/no-explicit-any": "error",
-        "no-alert": "error",
-        "consistent-return": "error",
-        "no-nested-ternary": "off",
-      },
-      eslintPluginUnicorn.configs.recommended,
-      {
-        rules: {
-          "unicorn/filename-case": [
-            "error",
-            {
-              case: "kebabCase",
-            },
-          ],
+    rules: {
+      "no-console": "error",
+      "no-unused-vars": "error",
+      "no-var": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "no-alert": "error",
+      "consistent-return": "error",
+      "no-nested-ternary": "off",
+      "unicorn/filename-case": [
+        "error",
+        {
+          case: "kebabCase",
         },
-      },
-    ],
+      ],
+    },
   }),
+  eslintPluginUnicorn.configs.recommended,
 ];
 
 export default eslintConfig;
