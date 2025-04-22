@@ -12,8 +12,6 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.config({
-    // plugins: [eslintPluginUnicorn],
-    plugins: ["unicorn"],
     extends: ["next/core-web-vitals", "next/typescript"],
     rules: {
       "no-console": "error",
