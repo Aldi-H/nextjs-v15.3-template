@@ -27,6 +27,15 @@ const eslintConfig = [
           case: "kebabCase",
         },
       ],
+      "unicorn/import-style": [
+        "error", {
+          "extendsDefaultStyles": false,
+          "checkImport": false,
+          "checkDynamicImport": false,
+          "checkExportFrom": true,
+          "checkRequire": false,
+        }
+      ]
     },
   }),
   eslintPluginUnicorn.configs.recommended,
