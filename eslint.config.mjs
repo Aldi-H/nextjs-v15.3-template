@@ -29,7 +29,7 @@ const eslintConfig = [
       ],
       "unicorn/import-style": [
         "error", {
-          "extendsDefaultStyles": false,
+          "extendDefaultStyles": false,
           "checkImport": false,
           "checkDynamicImport": false,
           "checkExportFrom": true,
