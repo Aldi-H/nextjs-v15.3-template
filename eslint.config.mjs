@@ -27,7 +27,78 @@ const eslintConfig = [
           case: "kebabCase",
         },
       ],
-      "unicorn/import-style": "off"
+      "unicorn/import-style": "off",
+      "unicorn/prevent-abbreviations": [
+        "error",
+        {
+          replacements: {
+            e: {
+              error: false,
+              event: false,
+            },
+            env: {
+              environment: false,
+            },
+            err: {
+              error: true,
+            },
+            ev: {
+              event: true,
+            },
+            evt: {
+              event: true,
+            },
+            idx: {
+              index: false,
+            },
+            msg: {
+              message: false,
+            },
+            props: {
+              properties: false,
+            },
+            prop: {
+              property: false,
+            },
+            param: {
+              parameter: false,
+            },
+            params: {
+              parameters: false,
+            },
+            res: {
+              resource: true,
+              response: true,
+              result: true,
+            },
+            src: {
+              source: true,
+            },
+            temp: {
+              temporary: true,
+            },
+            tmp: {
+              temporary: true,
+            },
+            util: {
+              utility: true,
+            },
+            utils: {
+              utilities: true,
+            },
+            val: {
+              value: true,
+            },
+            var: {
+              variable: true,
+            },
+            vars: {
+
+              variables: true,
+            },
+          },
+        },
+      ],
     },
   }),
   eslintPluginUnicorn.configs.recommended,

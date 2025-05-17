@@ -8,11 +8,15 @@
     "^public/assets/(.*)$",
     "^[./]"
   ],
+  "tailwindStylesheet": "./src/styles/globals.css",
+  "tailwindAttributes": ["className"],
+  "tailwindFunctions": ["clsx", "cva"],
+  "tailwindPreserveDuplicates": true,
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "tailwindPreserveWhitespace": true,
   "plugins": [
-    "prettier-plugin-tailwindcss",
-    "@trivago/prettier-plugin-sort-imports"
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
   ]
 }
